@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>axe</title>
+
+    <link rel="stylesheet" href="./css/add.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Navbar</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="add.html">Add</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="operations-container text-center" style="margin-top: 40px">
+      <div class="container form-group" style="width: 30%">
+        <form id="add-form" class="form-axe">
+          <div class="form-item">
+            <label class="form-label">brand</label><br />
+            <input type="text" class="form-control" id="title-input" />
+          </div>
+          <div class="form-item">
+            <label class="form-label">Description</label><br />
+            <input type="text" class="form-control desc" id="decription-input" />
+          </div>
+          <div class="form-item">
+            <label class="form-label">Price</label><br />
+            <input type="number" class="form-control" id="price-input" />
+          </div>
+          <button id="submit-button" type="submit" class="btn btn-danger" style="margin-top: 30px">Submit</button>
+        </form>
+      </div>
+    </div>
+    <div id="window_content" class="window-content">
+      <h3 id="window_text_content" class="window-text-content"></h3>
+      <button id="window_button" class="window-button btn btn-success">OK</button>
+    </div>
+
+    <script type="module" src="./js/add.js"></script>
+  </body>
+</html>
